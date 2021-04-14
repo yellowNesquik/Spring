@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+
+
+<style>
+
+.serviceBox{
+ border: 1px solid #8a716a;
+ border-radius: 10px;
+ margin-top: 30px;
+ padding: 25px 20px;
+ position: relative;
+}
+.serviceBox .title{
+ font-size: 24px;
+ color: #787472;
+}
+.serviceBox .description{
+ font-size: 16px;
+ color: #8a716a;
+ line-height: 25px;
+}
+@media only screen and (max-width: 990px){
+ .serviceBox{ margin-bottom: 30px; }
+}
+@media only screen and (max-width: 767px){
+ .serviceBox{ margin-bottom: 40px; }
+}
+</style>
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-4 col-sm-6">
+            <div class="serviceBox">
+                <h3 class="title">Earn on Bootstrap</h3>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="serviceBox">
+                <h3 class="title">News Bootstrap</h3>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="serviceBox">
+                <h3 class="title">Designer Bootstrap</h3>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+
+    </div><!-- /.row -->
+</div><!-- /.container -->
+
+</body>
+</html>

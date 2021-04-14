@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+
+
+<div>
+    <form method="post">
+        <input type="text" name="name" placeholder="Name"/>
+        <input type="text" name="status" placeholder="Status"/>
+        <button type="submit">Add</button>
+    </form>
+</div>
+
+
+<style>
+   table {
+    width: 300px; /* Ширина таблицы */
+    border: 5px solid green; /* Рамка вокруг таблицы */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+   }
+   td {
+    text-align: left; /* Выравниваем текст по центру ячейки */
+   }
+   table.jewel {
+    width: 70%; /* Ширина таблицы */
+    border: 3px solid #666; /* Рамка вокруг таблицы */
+   }
+   th {
+    background: #009383; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    text-align: left; /* Выравнивание по левому краю */
+   }
+   tr.odd {
+    background: #ebd3d7; /* Цвет фона */
+   }
+  </style>
+<table class="jewel">
+    <tr>
+        <th>Devices</th><th>Status</th><th>Description</th>
+    </tr>
+    <tr class="odd">
+        <td>Device 1</td><td>Inactive</td><td>10</td>
+    </tr>
+    <tr>
+        <td>Device 1</td><td>Inactive</td><td>9</td>
+    </tr>
+    <tr class="odd">
+        <td>Device 1</td><td>Inactive</td><td>7</td>
+    </tr>
+    <tr>
+        <td>Device 1</td><td>Inactive</td><td>8</td>
+    </tr>
+    <tr class="odd">
+        <td>Device 1</td><td>Inactive</td><td>9</td>
+    </tr>
+</table>
+</body>
+</html>
